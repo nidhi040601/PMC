@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header.section1{
+    background-image: url("./assets/sec1_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+header.section1 h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;   
+}
+
+
+header.section1 a{
+    background-color: rgb(52, 52, 52);
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.section2{
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.section2 h2{ 
+    padding: 5px; 
+    font-weight: bold;
+}
+
+.section2 .col{
+    float: left;
+    width: 50%;
+    padding: 10px 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.section2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section3{
+    background-color: rgb(52, 52, 52);
+    padding: 20px 70px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section3 .col{
+    background-color: white;
+    float: left;
+    width: 30%;
+    margin:auto 3px; 
+    text-align: center;
+}
+
+.section3::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section3 .col img{
+    width: 100%;
+    height: auto;   
+}
+
+.section3 h3{
+    padding: 5px;
+    font-weight: bold; 
+}
+
+.section3 p{
+    padding: 15px;
+}
+
+.section4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section4 h2{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.section4 p{
+    width: 50%;
+    margin: auto;
+}
+
+.section5{
+    color: white;
+    text-align: center;
+}
+
+.section5 h1{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.section5 .col1{
+    background-color: rgb(44, 105, 219);
+    float: left;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+.section5 .col2{
+    background-color: rgb(52, 52, 52);
+    float: left;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+.section5::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer.section6 {
+    text-align: center;
+    color: white;
+}
+
+footer.section6 .col{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    background-color: black;    
+}
+
+footer.section6::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 700px){
+    .section2 .col, .section3 .col, .section5 .col1 , .section5 .col2, .section6 .col{
+        width: 100%;
+        height: auto;
+    }
+}
