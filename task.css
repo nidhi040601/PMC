@@ -43,46 +43,41 @@ header.section1 a{
 }
 
 .section2 h2{ 
-    padding: 5px; 
+    padding-top: 5px; 
     font-weight: bold;
 }
 
-.section2 .col{
-    float: left;
-    width: 50%;
-    padding: 10px 30px;
-    margin: auto;
-    text-align: center;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.section2::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.section3{
-    background-color: rgb(52, 52, 52);
-    padding: 20px 70px;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.section3 .col{
-    background-color: white;
-    float: left;
+.flex-container > div{
     width: 30%;
-    margin:auto 3px; 
+    margin: 10px;
+    padding:0px 20px;
     text-align: center;
 }
 
-.section3::after{
-    content: "";
-    display: table;
-    clear: both;
+.flex-container1{
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
 }
 
-.section3 .col img{
+.flex-container1 > div{
+    background-color: white;
+    width: 20%;
+    padding: 15px;
+    margin: 5px; 
+    text-align: center;
+}
+
+.section3 img{
     width: 100%;
     height: auto;   
 }
@@ -114,58 +109,53 @@ header.section1 a{
 .section5{
     color: white;
     text-align: center;
+    background-color: rgb(44, 105, 219);
 }
 
-.section5 h1{
+.section5 h3{
     padding: 5px;
     font-weight: bold;
+    color: black;
 }
 
-.section5 .col1{
-    background-color: rgb(44, 105, 219);
-    float: left;
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.flex-container2 > div{
     width: 50%;
-    height: 200px;
     text-align: center;
     padding: 15px;
-}
-
-.section5 .col2{
-    background-color: rgb(52, 52, 52);
-    float: left;
-    width: 50%;
-    height: 200px;
-    text-align: center;
-    padding: 15px;
-}
-
-.section5::after{
-    content: "";
-    display: table;
-    clear: both;
 }
 
 footer.section6 {
     text-align: center;
     color: white;
+    background-color: black;  
 }
 
-footer.section6 .col{
-    float: left;
+.flex-container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.flex-container3 > div{
     width: 50%;
     padding: 5px;
-    text-align: center;
-    background-color: black;    
+    text-align: center;  
 }
 
-footer.section6::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 @media only screen and (max-width: 700px){
-    .section2 .col, .section3 .col, .section5 .col1 , .section5 .col2, .section6 .col{
+    .section2 .col, .section3 .col, .section5 .col , .section6 .col{
         width: 100%;
         height: auto;
     }
